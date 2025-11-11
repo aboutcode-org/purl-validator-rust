@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache--2.0-blue.svg?style=for-the-badge)](https://opensource.org/licenses/Apache-2.0)
 [![Version](https://img.shields.io/github/v/release/aboutcode-org/purl-validator-rust?style=for-the-badge)](https://github.com/aboutcode-org/purl-validator-rust/releases)
-[![Test](https://img.shields.io/github/actions/workflow/status/aboutcode-org/purl-validator-rust/run-test.yml?style=for-the-badge&logo=github)](https://github.com/aboutcode-org/purl-validator-rust/actions)
+[![Test](https://img.shields.io/github/actions/workflow/status/aboutcode-org/purl-validator-rust/ci.yml?style=for-the-badge&logo=github)](https://github.com/aboutcode-org/purl-validator-rust/actions)
 
 **purl-validator** is a Rust library for validating [Package URLs (PURLs)](https://github.com/package-url/purl-spec). It works fully offline, including in **air-gapped** or **restricted environments**, and answers one key question: **Does the package this PURL represents actually exist?**
 
@@ -51,6 +51,12 @@ Run tests:
 
 ```bash
 make test
+```
+
+Fix formatting and linting:
+
+```bash
+make valid
 ```
 
 ## License
