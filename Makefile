@@ -7,7 +7,7 @@ clean:
 	rm -rf target
 
 test:
-	cargo test
+	cargo test -- --nocapture
 
 valid:
 	cargo fmt --all
@@ -17,4 +17,7 @@ check:
 	cargo fmt --all -- --check
 	cargo clippy --all-targets --all-features -- -D warnings
 
-.PHONY:  build-fst clean test valid check
+doc:
+	cargo doc --open
+
+.PHONY:  build-fst clean test valid check doc
